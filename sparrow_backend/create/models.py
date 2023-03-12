@@ -13,6 +13,7 @@ class Layout(models.Model):
     format = models.JSONField()
     title = models.CharField(max_length=100,blank=True,null=True)
     gsheetId = models.CharField(max_length=100,blank=True,null=True)
+    train = models.JSONField(blank=True,null=True)
 
     def __str__(self):
         if self.title:
