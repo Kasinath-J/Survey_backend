@@ -2,7 +2,8 @@ import openai
 
 def summarizer_fn(ans):
     
-    openai.api_key = "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"
+    
+    openai.api_key = "secret"
     text=""
     for t in ans:   
         text+=t
